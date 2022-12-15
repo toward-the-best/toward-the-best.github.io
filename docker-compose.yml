@@ -1,0 +1,11 @@
+version: '3.0'
+
+services:
+  dev:
+    image: toward-the-best:v1
+    build:
+      context: .
+    volumes:
+      - .:/usr/local/src
+    stdin_open: true       #docker run -i
+    tty: true              #docker run -t
